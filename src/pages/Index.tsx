@@ -144,10 +144,13 @@ const Index = () => {
               <div className="space-y-4">
                 <Button
                   size="lg"
+                  asChild
                   className="w-full font-pixel text-sm md:text-base border-4 border-foreground shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-[3px_3px_0px_0px_rgba(0,0,0,0.3)] transition-all hover:-translate-y-1 py-6"
                 >
-                  <Icon name="Monitor" className="mr-3 h-5 w-5" />
-                  WINDOWS 64-BIT
+                  <a href="https://drive.google.com/drive/folders/1zE8P83yX5PD_4kh-wEX-X9Rl9jRvDLok" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Monitor" className="mr-3 h-5 w-5" />
+                    WINDOWS 64-BIT
+                  </a>
                 </Button>
                 
                 <Button
