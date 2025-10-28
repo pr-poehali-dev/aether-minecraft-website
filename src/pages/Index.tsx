@@ -2,9 +2,11 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Icon from "@/components/ui/icon";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState<'home' | 'download'>('home');
+  const navigate = useNavigate();
 
   const portalBlocks = Array.from({ length: 20 }, (_, i) => i);
 
@@ -79,7 +81,10 @@ const Index = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 mb-12">
-              <Card className="p-6 border-4 border-foreground bg-card shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] transition-all hover:-translate-y-1">
+              <Card 
+                className="p-6 border-4 border-foreground bg-card shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] transition-all hover:-translate-y-1 cursor-pointer"
+                onClick={() => navigate('/crafting')}
+              >
                 <div className="flex justify-center mb-4">
                   <div className="w-16 h-16 bg-secondary border-2 border-foreground flex items-center justify-center">
                     <Icon name="Pickaxe" size={32} className="text-secondary-foreground" />
