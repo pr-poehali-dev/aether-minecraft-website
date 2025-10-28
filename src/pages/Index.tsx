@@ -96,7 +96,10 @@ const Index = () => {
                 </p>
               </Card>
 
-              <Card className="p-6 border-4 border-foreground bg-card shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] transition-all hover:-translate-y-1">
+              <Card 
+                className="p-6 border-4 border-foreground bg-card shadow-[6px_6px_0px_0px_rgba(0,0,0,0.3)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] transition-all hover:-translate-y-1 cursor-pointer"
+                onClick={() => navigate('/portals')}
+              >
                 <div className="flex justify-center mb-4">
                   <div className="w-16 h-16 bg-primary border-2 border-foreground flex items-center justify-center">
                     <Icon name="Zap" size={32} className="text-primary-foreground" />
