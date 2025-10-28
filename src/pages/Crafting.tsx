@@ -45,7 +45,7 @@ const Crafting = () => {
               КРАФТ
             </h2>
             <p className="font-pixel text-xs md:text-sm text-muted-foreground leading-relaxed">
-              РЕЦЕПТЫ ДЛЯ СОЗДАНИЯ ПРЕДМЕТОВ
+              Рецепт огнива
             </p>
           </div>
 
