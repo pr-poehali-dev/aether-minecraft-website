@@ -57,6 +57,15 @@ const Index = () => {
         {activeSection === 'home' && (
           <div className="animate-pixel-fade">
             <div className="flex flex-col items-center text-center mb-12">
+              <div className="mb-8">
+                <img
+                  src="https://cdn.poehali.dev/files/9431a762-7134-40fd-8b14-76c341acb93a.png"
+                  alt="Minecraft Logo"
+                  className="w-full max-w-2xl mx-auto animate-float"
+                  style={{ imageRendering: 'pixelated' }}
+                />
+              </div>
+              
               <div className="relative mb-8">
                 <div className="absolute inset-0 bg-primary/20 blur-2xl animate-portal-pulse" />
                 <div className="relative grid grid-cols-4 gap-1 p-8 bg-card border-4 border-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,0.3)]">
